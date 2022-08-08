@@ -24,6 +24,8 @@ namespace DataAccess.Concrete.EntityFramework
                              select new CarDetailDto
                              {
                                  CarId = c.Id,
+                                 BrandId = b.Id,
+                                 ColorId = cl.Id,
                                  BrandName = b.BrandName,
                                  ColorName = cl.ColorName,
                                  ImagePath = ci.ImagePath,
@@ -32,8 +34,8 @@ namespace DataAccess.Concrete.EntityFramework
                                  Description = c.Description,
                              };
                 return filter == null
-                    ? result.ToList()
-                    : result.Where(filter).ToList();
+                        ? result.ToList()
+                        : result.Where(filter).ToList();    
 
             }
         }
