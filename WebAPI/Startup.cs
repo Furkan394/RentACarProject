@@ -22,6 +22,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.OpenApi.Models;
 
 namespace WebAPI
 {
@@ -38,6 +39,15 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("SwaggerApi", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Swagger API",
+                });
+            });
 
             services.AddCors();
 
@@ -88,6 +98,12 @@ namespace WebAPI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/SwaggerApi/swagger.json", "Swagger API");
             });
         }
     }
