@@ -1,12 +1,12 @@
 # Rent A Car Project
 
-Car Rental Project was created by taking inspiration from the car rental systems.
+The Car Rental Project was inspired by existing car rental systems.
 <br><br>
-The project was created in accordance with the SOLID rules using the Enterprise-Layered Architecture structure and written in C# language.
+The project was created in accordance with SOLID principles, using an Enterprise-Layered Architecture, and written in C#.
 <br><br>
-In this project, Plug-and-Play structures were established.
+In this project, plug-and-play structures were established.
 <br><br>
-The project has been created in a format that does not resist development, technical change and innovation.
+The project has been created in a format that is adaptable to development, technical changes, and innovation.
 
 ### Technologies 
 :star: .NET<br>
@@ -25,15 +25,15 @@ The project has been created in a format that does not resist development, techn
 
 ### Enterprise-Layered Architecture
 
-Entities: Entity Layer of the project and database tables are mapped to project objects and DTO's are used for filtering and extending object properties.
+Entities: The Entity Layer of the project and database tables are mapped to project objects, and DTOs are used for filtering and extending object properties.
 <br>
-DataAccess: Data Access Layer of the project and the project connected with the database and includes CRUD operations.
+DataAccess: The Data Access Layer of the project connects to the database and includes CRUD operations.
 <br>
-Business: Business Layer of the project and the project includes various business rules such as Data Controls, Validations, IoC Container and Authorization Controls.
+Business: The Business Layer of the project includes various business rules such as data controls, validations, IoC container, and authorization controls.
 <br>
-Core: Core Layer of the project and used for general and universal operation.
+Core: The Core Layer of the project is used for general and universal operations.
 <br>
-WebAPI: Restful API Layer of the project and includes HTTP Methods.
+WebAPI: The RESTful API Layer of the project includes HTTP methods.
 
 ### Front-End
 developed with Angular -> [Front-End](https://github.com/Furkan394/RentACar-Frontend)
